@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { createContext, useEffect, useContext, useState } from "react";
 import {
   createUserWithEmailAndPassword,

@@ -34,17 +34,20 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <Signin />
-      <Signup />
-      <ForgotPW />
-      <main className="course_main">
-        <aside className="sidebar_wrapper">
-          <Sidebar writing={writing} />
-        </aside>
-        <div className="course_wrapper">
-          <Routes>
-            <Route path="/" element={<Home />} />
+        <Nav />
+        <Signin />
+        <Signup />
+        <ForgotPW />
+        <main className="course_main">
+          <aside className="sidebar_wrapper">
+            <Sidebar writing={writing} />
+          </aside>
+          <div className="course_wrapper">
+            <Routes>
+              {/* <Route index element={<Store />} />
+              <Route path="success" element={<Success />} />
+              <Route path="cancel" element={<Cancel />} /> */}
+              <Route path="/" element={<Home />} />
             <Route
               path="/dashboard"
               element={<Dashboard userAnswer={userAnswer} writing={writing} />}
@@ -57,9 +60,9 @@ function App() {
               path="/writing/celpip02"
               element={<Writing writing={writing} userAnswer={userAnswer} />}
             />
-          </Routes>
-        </div>
-      </main>
+            </Routes>
+          </div>
+        </main>
     </div>
   );
 }

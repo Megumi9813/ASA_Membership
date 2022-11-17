@@ -2,7 +2,7 @@ import React from 'react'
 import MembershipHome from '../assets/MembershipHome.jpg'
 import CourseList from "../components/CourseList";
 
-function Home({ courses }) {
+function Home() {
   return (
     <div className="home">
       <div className="bgImg-wrapper">
@@ -11,7 +11,7 @@ function Home({ courses }) {
           <img src={MembershipHome} alt="" />
         </figure>
       </div>
-      <CourseList courses={courses} />
+      <CourseList />
     </div>
   );
 }

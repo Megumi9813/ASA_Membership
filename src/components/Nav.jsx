@@ -20,8 +20,6 @@ function Nav() {
   } = useUserContext();
   const [open, setOpen] = useState(false);
 
-  console.log(user)
-
   return (
     <div className="nav_container">
       <nav className="dashboard_nav">

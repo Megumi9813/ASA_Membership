@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Dashboard({ userAnswer, writing }) {
   return (
     <div className="container">
-      <div className="dashboard">
+      {/* <div className="dashboard">
         <div className="progress_wrapper">
           <div className="progressbar"></div>
           <FontAwesomeIcon icon="fa-trophy" />
@@ -53,7 +53,7 @@ function Dashboard({ userAnswer, writing }) {
           ))}
           {console.log(writing)}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
